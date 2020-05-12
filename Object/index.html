@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        function Student (name, age, cgpa, lang){
+            this.name = name;
+            this.age = age;
+            this.cgpa = cgpa;
+            this.lang = lang;
+
+            this.display = function () {
+                console.log(this.name);
+                console.log(this.age);
+                console.log(this.cgpa);
+                console.log(this.lang);
+            }
+        }
+
+        var student1 = new Student("Nazifa Sadia", 23, 3.90, ["Bengali", "English"]);
+        student1.display();
+    </script>
+    
+</body>
+</html>
