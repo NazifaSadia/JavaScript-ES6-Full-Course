@@ -9,8 +9,10 @@
     <script>
 // Task 4: Letter Grade Program
         var marks = parseInt(prompt("Enter marks:"));
-
-        if(marks >= 80)
+        
+        if (marks > 100 || marks < 0)
+            document.write("Invalid Number.");
+        else if(marks >= 80)
             document.write("A+");
         else if(marks >= 70 && marks <= 79)
             document.write("A");
