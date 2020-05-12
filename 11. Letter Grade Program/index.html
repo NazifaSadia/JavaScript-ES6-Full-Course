@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter Grade Program</title>
+</head>
+<body>
+    <script>
+// Task 4: Letter Grade Program
+        var marks = parseInt(prompt("Enter marks:"));
+
+        if(marks >= 80)
+            document.write("A+");
+        else if(marks >= 70 && marks <= 79)
+            document.write("A");
+        else if(marks >= 60 && marks <= 69)
+            document.write("A-");
+        else if(marks >= 50 && marks <= 59)
+            document.write("B");
+        else if(marks >= 45 && marks <= 49)
+            document.write("C");
+        else if(marks >= 34 && marks <= 44)
+            document.write("D");
+        else
+            document.write("F");
+    </script>
+</body>
+</html>
