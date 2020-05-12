@@ -8,12 +8,12 @@
 <body>
     <script>
         var farn = parseFloat(prompt("Enter Fahrenheit: "));
-        var celc = (farn - 32) * (5/9);
-        document.write(celc + "<br/>");
+        var cels = (farn - 32) * (5/9);
+        document.write(cels + "<br/>");
 
         var cels = parseFloat(prompt("Enter Celsius: "));
         var farn = (cels * (5/9)) + 32;
-        document.write(farn);
+        document.write(farn.toFixed(2));
     </script>    
 </body>
 </html>
