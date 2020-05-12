@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array methods</title>
+</head>
+<body>
+    <script>
+        var names = ["Nazifa","Sadia", "Aminta"];
+        names.push("Nusaiba");
+        names.push("Tushnim");
+
+        // document.write(names);
+        // names.pop();
+        // document.write(names);
+
+    // shift(): opposite to pop()   
+        //names.shift();
+
+    // unshift(): opposite to push()   
+        // names.unshift("Anirban");
+
+    // splice(): add + remove
+        // names.splice(2, 1, "Azad");
+
+//slice(): remove element unchanging the main array
+        // var newArray = names.slice(1,3);
+        // document.write(newArray);
+
+// sort(): only sorts Alphabets
+        // var sortedNames = names.sort();
+        // document.write(sortedNames);
+
+// reverse()
+        // var sortedNames = names.sort();
+        // sortedNames.reverse();
+        // document.write(sortedNames);
+
+// Number sort()
+        var numbers = [20,5,45,1,7];
+        numbers.sort((a, b) => b-a); // using arrow function
+        // {
+            //return a-b;
+           //return b-a;
+        // });
+        document.write(numbers);
+    
+    </script>
+</body>
+</html>
