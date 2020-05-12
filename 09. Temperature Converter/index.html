@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <script>
+        var farn = parseFloat(prompt("Enter Fahrenheit: "));
+        var cels = (farn - 32) * (5/9);
+        document.write("Temperature in Celsius: " + cels + "<br/>");
+
+        var cels = parseFloat(prompt("Enter Celsius: "));
+        var farn = (cels * (5/9)) + 32;
+        document.write("Temperature in Fahrenheit: " + farn.toFixed(2));
+    </script>    
+</body>
+</html>
