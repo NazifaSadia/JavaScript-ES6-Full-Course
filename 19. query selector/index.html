@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>query selector</title>
+</head>
+<body>
+
+    <h1 id="one">This is heading 1.</h1>
+    <h1 class="two">This is heading 2.</h1>
+
+    <a href="#">Home</a>
+    <ul>
+        <li><a href="#">Tutorial</a></li>
+        <li>Bangladesh</li>
+    </ul>
+
+    <div class="my-div">
+        <a href="">Contact</a>
+    </div>
+
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+
+    <script>
+       //document.querySelector("#one").innerHTML = "Changed";
+       //document.querySelector(".two").innerHTML = "Heading two is changed";
+       //document.querySelector("h1").innerHTML = "Changed";
+
+       //document.querySelector("a").innerHTML = "Changed";
+       //document.querySelector("li a").innerHTML = "Changed";
+       //document.querySelector("div a").innerHTML = "Changed";
+       //document.querySelector(".my-div a").innerHTML = "Changed";
+
+       document.querySelectorAll("p")[1].innerHTML = " This is Text";
+      
+    </script>
+    
+</body>
+</html>
