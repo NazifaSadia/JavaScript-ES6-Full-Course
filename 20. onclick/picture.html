@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture onclick</title>
+</head>
+<body>
+
+    <button onclick="blue()">Blue Ball</button>
+    <button onclick="green()">Pink Ball</button>
+    <br>
+    <img id="image" src="#" alt="" height="300px" width="300px">
+
+    <script>
+        var picture = document.querySelector("#image");
+        function blue() {
+            picture.src = "images/image-1.png";
+        }
+
+        function green() {
+            picture.src = "images/image-2.png";
+        }
+    </script>
+    
+</body>
+</html>

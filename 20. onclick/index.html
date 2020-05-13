@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onclick Property</title>
+</head>
+<body>
+    
+    <p id="para1">This is paragraph</p>
+
+   <!--<button onclick="alert('Hello!')">Click Me</button> 
+    <button onclick="myMessage()" >Click Me</button> --> 
+
+    <!-- <button onclick="myMessage1()" >Button 1</button> 
+    <button onclick="myMessage2()" >Button 2</button>  -->
+
+    <button onclick="myMessage1()" >Button 1</button> 
+    <button onclick="myMessage2()" >Button 2</button> 
+
+    <script>
+        function myMessage() {
+            alert("Hello Everyone.");
+        }
+
+        function myMessage1() {
+            document.querySelector("#para1").innerHTML= "Button 1 clicked";
+        }
+        function myMessage2() {
+            document.querySelector("#para1").innerHTML= "Button 2 clicked";
+        }
+
+    </script>
+    
+</body>
+</html>
