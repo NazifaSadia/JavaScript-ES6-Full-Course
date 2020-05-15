@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Play</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="myButton">A</button>
+    <button class="myButton">B</button>
+    <button class="myButton">C</button>
+</body>
+
+<script>
+    for (let i = 0; i < 3; i++) {
+        document.querySelectorAll(".myButton")[i].addEventListener("click", function (){
+            let text = this.innerHTML;
+            audioPlay(text);
+        })
+    }
+
+    function audioPlay(text){
+        switch (text) {
+            case "A":
+                var audio = new Audio("a.mp3");
+                audio.play();
+                break;
+            case "B":
+                var audio = new Audio("b.mp3");
+                audio.play();
+                break;
+            case "C":
+                var audio = new Audio("c.mp3");
+                audio.play();
+                break;
+            
+            default:
+                break;
+        }
+    }
+   
+</script>
+</html>
