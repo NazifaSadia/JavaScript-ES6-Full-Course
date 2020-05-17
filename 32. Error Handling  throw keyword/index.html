@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Handling throw keyword</title>
+</head>
+<body>
+    <p>Enter a number between 5 to 10: </p>
+    <input id="num" type="text">
+    <button id="checkBtn">Check</button>
+    <script>
+        var btn = document.querySelector("#checkBtn");
+        btn.addEventListener("click", function(){
+            var num = document.querySelector("#num").value;
+            //document.write(`The value is ${num}`);
+            try {
+            if (num < 5) {
+                throw "Input is too small";
+            } else if (num > 10) {
+                throw "Input is too large";
+            } 
+        } catch (error) {
+            console.log(error);
+        }
+        });
+    </script>
+</body>
+</html>
