@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forEach</title>
+</head>
+<body>
+    <script>
+        var numbers = [10,20,30,40];
+        console.log(numbers);
+        
+        var squareNumbers = [];
+        numbers.forEach(function (x){
+            squareNumbers.push(x*x);
+            //console.log(squareNumbers);
+           //document.write(`${x} `);
+        })
+
+        numbers.forEach(function(x, index, array){
+            array[index] = x + 5;
+        })
+        console.log(numbers);
+    </script>
+</body>
+</html>
